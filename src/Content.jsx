@@ -30,14 +30,18 @@ export function Content() {
 
   return (
     <div>
-      <Signup />
-      <Login />
-      <LogoutLink />
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Logout" element={<LogoutLink />} />
+        <Route
+          path="/saved_searches/new"
+          element={<SavedSearchNew onCreateSavedSearches={handleCreateSavedSearches} />}
+        />
+        <Route path="/saved_searches" element={<SavedSearchIndex savedSearches={savedSearches} />} />
+        <Route path="/" element={<SavedSearchIndex savedSearches={savedSearches} />} />
       </Routes>
-      <SavedSearchNew onCreateSavedSearches={handleCreateSavedSearches} />
-      <SavedSearchIndex savedSearches={savedSearches} />
     </div>
   );
 }
