@@ -5,6 +5,8 @@ import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
 import { SavedSearchIndex } from "./SavedSearchIndex";
 import { SavedSearchNew } from "./SavedSearchNew";
+import { Routes, Route } from "react-router-dom";
+import { About } from "./About";
 export function Content() {
   const [savedSearches, setSavedSearches] = useState([]);
 
@@ -31,6 +33,9 @@ export function Content() {
       <Signup />
       <Login />
       <LogoutLink />
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
       <SavedSearchNew onCreateSavedSearches={handleCreateSavedSearches} />
       <SavedSearchIndex savedSearches={savedSearches} />
     </div>
