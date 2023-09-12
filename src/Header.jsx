@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 export function Header() {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Restaurant App
+      <nav className="navbar" style={{ backgroundColor: "#F33A6A" }}>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Epicurean Express
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -16,17 +16,17 @@ export function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
-              <a class="nav-link" href="/signup">
+              <a className="nav-link" href="/signup">
                 Signup
               </a>
-              <a class="nav-link" href="/login">
+              <a className="nav-link" href="/login">
                 Login
               </a>
             </div>

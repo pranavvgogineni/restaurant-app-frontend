@@ -48,7 +48,7 @@ export function Content() {
       <form onSubmit={handleSearchIndex}>
         <input type="text" name="cuisine" placeholder="Cuisine..." />
         <input type="text" name="address" placeholder="Address..." />
-        <input type="text" name="radius" placeholder="Radius..." />
+        <input type="text" name="radius" placeholder="Radius in meters..." />
         <button type="submit">Submit</button>
       </form>
       <MyMap searchResults={searchResults} isLoaded={isLoaded} />
