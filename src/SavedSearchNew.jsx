@@ -1,7 +1,12 @@
+import axios from "axios";
 export function SavedSearchNew(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const params = new FormData(event.target);
+    axios.post("http://localhost:3000/saved_searches", params).then((response) => {
+      console.log(params);
+      console.log("back end saved search response", response);
+    });
     props.onCreateSavedSearches(params, () => event.target.reset());
   };
   return (

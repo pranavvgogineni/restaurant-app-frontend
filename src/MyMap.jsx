@@ -5,6 +5,7 @@ export function MyMap(props) {
   const longitude = props.searchResults[0]?.geometry?.location.lng || -80.104;
   const isLoaded = props.isLoaded || false;
   console.log(props.searchResults[0]?.geometry?.location);
+  console.log("Google API response", props.searchResults[0]);
   return (
     <div>
       {isLoaded ? (

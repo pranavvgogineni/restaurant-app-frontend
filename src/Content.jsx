@@ -27,7 +27,6 @@ export function Content() {
     event.preventDefault();
     const params = new FormData(event.target);
     axios.post(`http://localhost:3000/searches.json`, params).then((response) => {
-      console.log(response);
       setSearchResults(response.data.results);
       setIsLoaded(true);
     });
