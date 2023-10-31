@@ -54,9 +54,9 @@ export function Content() {
       <SearchIndex searchResults={searchResults} />
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Logout" element={<LogoutLink />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<LogoutLink />} />
         <Route
           path="/saved_searches/new"
           element={<SavedSearchNew onCreateSavedSearches={handleCreateSavedSearches} />}
